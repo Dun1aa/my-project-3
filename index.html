@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- نحدد أن نوع الملف هو HTML5 -->
+<html lang="ar" dir="rtl">
+<!-- نحدد لغة الصفحة عربي واتجاه الكتابة من اليمين لليسار -->
+
+<head>
+  <meta charset="utf-8" />
+  <!-- يدعم الحروف العربية بشكل صحيح -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- يجعل الموقع متجاوب مع الجوال والتابلت -->
+
+  <title>دليل معالم الرياض</title>
+  <!-- عنوان الصفحة الذي يظهر في تبويب المتصفح -->
+
+  <!-- ربط ملف التنسيق CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- شريط التنقل -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">دليل معالم الرياض</div>
+      <nav class="nav-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main id="home">
+
+    <!-- واجهة الموقع -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>اكتشف أجمل معالم الرياض بسهولة</h1>
+          <p>
+            منصة بسيطة تساعدك في التعرف على أبرز معالم مدينة الرياض
+            مع معلومات مختصرة ونصائح للزيارة.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">اشترك لتصلك التحديثات</a>
+            <button class="btn secondary" id="openModalBtn" type="button">
+              شاهد مثال لمعْلم
+            </button>
+          </div>
+        </div>
+
+        <!-- رسالة تفاعل للمستخدم (مهمة 3) -->
+<p id="actionMessage" class="action-message" aria-live="polite"></p>
+
+        <div class="hero-image">
+          <img src="riyadh.jpg" alt="صورة لمعالم مدينة الرياض">
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم إضافي -->
+    <section class="features">
+      <div class="container">
+        <h2>لماذا تختارنا؟</h2>
+        <ul>
+          <li>معالم مختارة بعناية تناسب جميع الاهتمامات</li>
+          <li>معلومات مختصرة تساعدك في اتخاذ قرار سريع</li>
+          <li>تجربة استخدام سهلة على الجوال والكمبيوتر</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- قسم الفورم -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>اشترك لتصلك التحديثات</h2>
+
+        <form id="subscribeForm" class="form">
+          <label for="name">الاسم</label>
+          <input id="name" type="text" placeholder="اكتب اسمك هنا" />
+
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" type="email" placeholder="example@email.com" />
+
+          <button class="btn primary" type="submit">إرسال</button>
+
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- النافذة المنبثقة -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="closeModalBtn" type="button">×</button>
+      <h3>مثال لمعْلم في الرياض</h3>
+      <p>
+        قصر المصمك — معلم تاريخي في قلب الرياض ويُعد من أبرز الوجهات السياحية.
+      </p>
+    </div>
+  </div>
+
+  <!-- ربط ملف JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
